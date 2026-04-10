@@ -1,43 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mon portfolio</title>
+    <title>Mon Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+    <div class="progress-bar" id="progress-bar"></div>
     <header>
-        <div>
-            <a href="">mon portfolio</a>
+        <div class="logo-section">
+            <img src="image/Images/image.jpg" alt="Mario" class="logo-avatar">
+            <a href="index.html">Mon Portfolio</a>
         </div>
-        <nav>
+
+        <button class="hamburger" id="hamburger" aria-label="Menu de navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="nav-menu" class="nav-menu">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="projets.html"class="active">Projets</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
                 <li><a href="passions.html">Passions</a></li>
                 <li><a href="divertissement.html">Divertissement</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Basculer le thème sombre" title="Dark mode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
     </header>
+    <main>
+        <section id="projets" class="projets-container">
+            <h1>Mes Réalisations</h1>
+            <div class="projets-grid">
+                <article class="projet-card">
+                    <div class="projet-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800"
+                            alt="Aperçu du projet 1">
+                    </div>
+                    <div class="projet-info">
+                        <h3>Site E-commerce</h3>
+                        <p>Une boutique en ligne complète développée avec HTML, CSS et JavaScript pur.</p>
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                        <div class="projet-links">
+                            <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="#"><i class="fa-solid fa-external-link"></i> Démo</a>
+                        </div>
+                    </div>
+                </article>
 
-  <main>
-    <h1>voici mes projets</h1>
-  </main>
-<footer>
+                <article class="projet-card">
+                    <div class="projet-image">
+                        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=800"
+                            alt="Aperçu du projet 2">
+                    </div>
+                    <div class="projet-info">
+                        <h3>Gestionnaire de Tâches</h3>
+                        <p>Application web pour organiser ses projets quotidiens avec stockage local.</p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                        </div>
+                        <div class="projet-links">
+                            <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="#"><i class="fa-solid fa-external-link"></i> Démo</a>
+                        </div>
+                    </div>
+                </article>
 
-<p>© 2026 Adonaï. Tous droits réservés.</p>
-<p>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-x-twitter"></i></a>
-</p>
-</footer>
-</body>
-</html>
+                <article class="projet-card">
+                    <div class="projet-image">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=800"
+                            alt="Aperçu du projet 3">
+                    </div>
+                    <div class="projet-info">
+                        <h3>Blog Personnel</h3>
+                        <p>Projet en cours de migration vers Laravel pour apprendre le backend.</p>
+                        <div class="tags">
+                            <span>PHP</span>
+                            <span>Laravel</span>
+                        </div>
+                        <div class="projet-links">
+                            <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="#"><i class="fa-solid fa-clock"></i> Bientôt</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projet-card">
+                    <div class="projet-image">
+                        <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            alt="Analyse de données">
+                    </div>
+                    <div class="projet-info">
+                        <h3>Dashboard d'Analyse</h3>
+                        <p>Visualisation de données dynamiques avec Python et la bibliothèque Matplotlib.</p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Data</span>
+                        </div>
+                        <div class="projet-links">
+                            <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="#"><i class="fa-solid fa-external-link"></i> Démo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projet-card">
+                    <div class="projet-image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800"
+                            alt="Application Mobile">
+                    </div>
+                    <div class="projet-info">
+                        <h3>Application Météo</h3>
+                        <p>Une application utilisant une API en temps réel pour afficher la météo mondiale.</p>
+                        <div class="tags">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                        </div>
+                        <div class="projet-links">
+                            <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="#"><i class="fa-solid fa-external-link"></i> Démo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projet-card">
+                    <div class="projet-image">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=800"
+                            alt="Design UI/UX">
+                    </div>
+                    <div class="projet-info">
+                        <h3>Maquette Mobile UI</h3>
+                        <p>Conception d'une interface utilisateur moderne pour une application de fitness.</p>
+                        <div class="tags">
+                            <span>Figma</span>
+                            <span>Design</span>
+                        </div>
+                        <div class="projet-links">
+                            <a href="#"><i class="fa-brands fa-figma"></i> Design</a>
+                            <a href="#"><i class="fa-solid fa-eye"></i> Aperçu</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Retour au haut de la page" title="Retour au haut">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <footer>
+        <p>&copy; 2026 Adonaï. Tous droits réservés.</p>
+        <div>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub"><i
+                    class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/mario-majila" target="_blank" rel="noopener noreferrer"
+                aria-label="Profil LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Profil Twitter"><i
+                    class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </footer>
 </body>
+
 </html>

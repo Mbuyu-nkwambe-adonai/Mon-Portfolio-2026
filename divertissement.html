@@ -1,53 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mon portfolio</title>
+    <title>Mon Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+    <div class="progress-bar" id="progress-bar"></div>
     <header>
-        <div>
-            <a href="">mon portfolio</a>
+        <div class="logo-section">
+            <img src="image/Images/image.jpg" alt="Mario" class="logo-avatar">
+            <a href="index.html">Mon Portfolio</a>
         </div>
-        <nav>
+
+        <button class="hamburger" id="hamburger" aria-label="Menu de navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="nav-menu" class="nav-menu">
             <ul>
-                <li><a href="index.html" >Accueil</a></li>
+                <li><a href="index.html">Accueil</a></li>
                 <li><a href="projets.html">Projets</a></li>
                 <li><a href="passions.html">Passions</a></li>
-                <li><a href="divertissement.html"class="active">Divertissement</a></li>
+                <li><a href="divertissement.html" class="active">Divertissement</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Basculer le thème sombre" title="Dark mode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
     </header>
+    <main>
+        <section id="divertissement" class="ent-container ent-header">
+            <h1>Pause & Détente</h1>
+            <p>Ce que je regarde, j'écoute ou je lis quand je ne code pas.</p>
+        </section>
 
- <main>
-    <h1>voici mes divertissements</h1>
- </main>
-<footer>
+        <section class="ent-list">
+            <div class="ent-item">
+                <div class="ent-icon"><i class="fa-solid fa-music"></i></div>
+                <div class="ent-text">
+                    <h3>Playlist du moment</h3>
+                    <p>Principalement du Jazz pour la concentration et de l'Afrobeats pour l'énergie. La musique est mon
+                        moteur créatif.</p>
+                </div>
+            </div>
 
-<p>© 2026 Adonaï. Tous droits réservés.</p>
-<p>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-x-twitter"></i></a>
-</p>
-</footer>
-</body>
-</html>
+            <div class="ent-item">
+                <div class="ent-icon"><i class="fa-solid fa-film"></i></div>
+                <div class="ent-text">
+                    <h3>Séries & Films</h3>
+                    <p>Grand fan de science-fiction et de documentaires technologiques. Rien ne bat un bon film avec un
+                        scénario bien ficelé.</p>
+                </div>
+            </div>
+
+            <div class="ent-item">
+                <div class="ent-icon"><i class="fa-solid fa-book-open"></i></div>
+                <div class="ent-text">
+                    <h3>Lectures</h3>
+                    <p>Je dévore des livres sur le développement personnel et l'entrepreneuriat. Actuellement plongé
+                        dans des récits d'innovation.</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Retour au haut de la page" title="Retour au haut">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <footer>
+        <p>&copy; 2026 Adonaï. Tous droits réservés.</p>
+        <div>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub"><i
+                    class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/mario-majila" target="_blank" rel="noopener noreferrer"
+                aria-label="Profil LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Profil Twitter"><i
+                    class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </footer>
 </body>
-</html>
-</body>
+
 </html>

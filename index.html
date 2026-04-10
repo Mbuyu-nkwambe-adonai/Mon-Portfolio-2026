@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon portfolio</title>
+    <title>Mon Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+    <div class="progress-bar" id="progress-bar"></div>
     <header>
-        <div>
-            <a href="">Mon portfolio</a>
+        <div class="logo-section">
+            <img src="image/Images/image.jpg" alt="adonaï" class="logo-avatar">
+            <a href="index.html">Mon Portfolio</a>
         </div>
-        <nav>
+
+        <button class="hamburger" id="hamburger" aria-label="Menu de navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="nav-menu" class="nav-menu">
             <ul>
                 <li><a href="index.html" class="active">Accueil</a></li>
                 <li><a href="projets.html">Projets</a></li>
@@ -20,84 +37,91 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Basculer le thème sombre" title="Dark mode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
     </header>
-
     <main>
-        <section class="hero">
+        <section id="hero" class="hero">
             <div>
-                <h1>Bonjour, je suis Adonaï</h1>
+                <h1>Bonjour, je suis Adonaï Nkwambe</h1>
                 <p>Etudiant en L2 et passionné par le web</p>
-                <a href="projets.html">voir mes projet</a>
+                <a href="projets.html">Voir mes projets</a>
             </div>
             <div>
-                <img src="image/Images/image.jpg" alt="mon image" width="300">
+                <img src="image/Images/image.jpg" alt="mario artiste">
             </div>
         </section>
-        <section class="apropos">
-            <div>
-                <h2>A propos de moi</h2>
-                <p>Bonjour! je m'appelle Mbuyu Nkwambe Adonaï et je suis un etudiant dynamique et motivé en informatique à UDBL. Passionné par le developpement web, et l'intelligence artificielle, et le design graphique, je suis constamment à la recherche de nouvelles opportunités d'apprentissage et de défis stimulants.</p>
-                <p>Au cours de mes études, j'ai développé de solides compétences en programmation. Je suis une personne rigoureuse, créative et j'aime travailler en équipe pour atteindre des objectifs communs. Mon objectif est de contribuer à des projets innovants, trouver un stage, et maitriser le Framework Laravel.</p>
-
-            </div>
+        <section id="apropos" class="apropos">
+            <h2>A Propos de Moi</h2>
+            <p>
+                Bonjour ! Je m'appelle Adonaï Mbuyu Nkwambe et je suis un étudiant dynamique et motivé en
+                Informatique à l'UDBL. Passionné par le développement web, l'intelligence artificielle, et le
+                design graphique, je suis constamment à la recherche de nouvelles opportunités
+                d'apprentissage et de défis stimulants.
+            </p>
+            <p>
+                Au cours de mes études, j'ai développé de solides compétences en programmation. Je suis
+                une personne rigoureuse, créative et j'aime travailler en équipe pour atteindre des objectifs
+                communs. Mon objectif est de contribuer à des projets innovants,
+                maitriser le Framework Laravel.
+            </p>
         </section>
-        <section class="mes compétences">
-            <h2>Mes Compétences</h2>
+        <section id="competences" class="competences">
+            <h2>Mes compétences</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Catégories</th>
+                        <th>Compétences</th>
+                        <th>Niveau</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Programmation</td>
+                        <td>HTML, CSS, JavaScript, Python</td>
+                        <td>Avancé</td>
+                    </tr>
+                    <tr>
+                        <td>Design</td>
+                        <td>Figma, Photoshop(bases)</td>
+                        <td>Intermédiaire</td>
+                    </tr>
+                    <tr>
+                        <td>Langues</td>
+                        <td>Français(natif), Anglais(fluide)</td>
+                        <td>Avancé</td>
+                    </tr>
+                    <tr>
+                        <td>Outils</td>
+                        <td>VSCode, GIT, Suite Office</td>
+                        <td>Avancé</td>
+                    </tr>
+                    <tr>
+                        <td>Soft Skills</td>
+                        <td>Communication, résolution des problèmes, autonomie</td>
+                        <td>Expert</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
-<table>
-
-<tr>
-<th>Catégorie</th>
-<th>Compétences</th>
-<th>Niveau</th>
-</tr>
-
-<tr>
-<td>Programmation</td>
-<td>HTML, CSS, JavaScript, Python</td>
-<td>Avancé</td>
-</tr>
-
-<tr>
-<td>Design</td>
-<td>Figma, Photoshop</td>
-<td>Intermédiaire</td>
-</tr>
-
-<tr>
-<td>Langues</td>
-<td>Français (natif), Anglais (fluide)</td>
-<td>Avancé</td>
-</tr>
-
-<tr>
-<td>Outils</td>
-<td>Git, VS Code, Suite Office</td>
-<td>Avancé</td>
-</tr>
-
-<tr>
-<td>Soft Skills</td>
-<td>Communication, Résolution de problèmes, Autonomie</td>
-<td>Expert</td>
-</tr>
-
-</table>
-</section>
-</main>
-<footer>
-
-<p>© 2026 Adonaï. Tous droits réservés.</p>
-<p>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-x-twitter"></i></a>
-</p>
-</footer>
-</body>
-</html>
     </main>
-    <footer></footer>
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Retour au haut de la page" title="Retour au haut">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <footer>
+        <p>&copy; 2026 Adonaï. Tous droits réservés.</p>
+        <div>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub"><i
+                    class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/mario-majila" target="_blank" rel="noopener noreferrer"
+                aria-label="Profil LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Profil Twitter"><i
+                    class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </footer>
+
 </body>
+
 </html>

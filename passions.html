@@ -1,43 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mon portfolio</title>
+    <title>Mon Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+    <div class="progress-bar" id="progress-bar"></div>
     <header>
-        <div>
-            <a href="">mon portfolio</a>
+        <div class="logo-section">
+            <img src="image/Images/image.jpg" alt="Mario" class="logo-avatar">
+            <a href="index.html">Mon Portfolio</a>
         </div>
-        <nav>
+
+        <button class="hamburger" id="hamburger" aria-label="Menu de navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="nav-menu" class="nav-menu">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="projets.html">Projets</a></li>
-                <li><a href="passions.html"class="active">Passions</a></li>
+                <li><a href="passions.html" class="active">Passions</a></li>
                 <li><a href="divertissement.html">Divertissement</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Basculer le thème sombre" title="Dark mode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
     </header>
+    <main class="passions-container">
+        <section id="passions" class="passions-intro">
+            <h1>Au-delà du code</h1>
+            <p>Découvrez ce qui m'anime et nourrit ma créativité au quotidien.</p>
+        </section>
 
-   <main>
-    <h1>voici mes passions</h1>
-   </main>
-<footer>
+        <section class="passions-grid">
+            <article class="passion-card">
+                <div class="passion-icon">
+                    <i class="fa-solid fa-code-branch"></i>
+                </div>
+                <h3>Open Source</h3>
+                <p>J'adore explorer de nouveaux dépôts sur GitHub et contribuer à des projets communautaires pour
+                    apprendre des autres.</p>
+            </article>
 
-<p>© 2026 Adonaï. Tous droits réservés.</p>
-<p>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-x-twitter"></i></a>
-</p>
-</footer>
-</body>
-</html>
+            <article class="passion-card">
+                <div class="passion-icon">
+                    <i class="fa-solid fa-palette"></i>
+                </div>
+                <h3>Design Graphique</h3>
+                <p>Le UI/UX design est essentiel pour moi. Créer des interfaces qui sont à la fois belles et
+                    fonctionnelles est un vrai plaisir.</p>
+            </article>
+
+            <article class="passion-card">
+                <div class="passion-icon">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+                <h3>Veille Technologique</h3>
+                <p>Passionné par l'IA et les nouvelles technologies, je passe beaucoup de temps à lire sur les
+                    innovations de demain.</p>
+            </article>
+
+            <article class="passion-card">
+                <div class="passion-icon">
+                    <i class="fa-solid fa-gamepad"></i>
+                </div>
+                <h3>Jeux Vidéo</h3>
+                <p>Un excellent moyen de se détendre tout en analysant les mécaniques de jeu et le storytelling
+                    interactif.</p>
+            </article>
+        </section>
     </main>
-    <footer></footer>
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Retour au haut de la page" title="Retour au haut">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <footer>
+        <p>&copy; 2026 Adonaï. Tous droits réservés.</p>
+        <div>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub"><i
+                    class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/mario-majila" target="_blank" rel="noopener noreferrer"
+                aria-label="Profil LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Profil Twitter"><i
+                    class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </footer>
 </body>
+
 </html>
