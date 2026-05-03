@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Contact | Mon Portfolio</title>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WM1Q9GKB8L"></script>
 <script>
@@ -85,16 +85,16 @@
                     <div class="card-icon"><i class="fa-solid fa-paper-plane"></i></div>
                     <h2>Être recontacté</h2>
                     <p>Laissez vos coordonnées pour un rappel téléphonique.</p>
-                    <form action="#" class="minimal-form" id="contactForm">
+                    <form name="contact" method="POST" data-netlify="true" class="minimal-form" id="contactForm">
                         <div class="input-box">
                             <label for="fullname" class="sr-only">Nom complet</label>
                             <i class="fa-solid fa-user"></i>
-                            <input type="text" id="fullname" placeholder="Nom complet" required>
+                            <input type="text" id="fullname" name="name" placeholder="Nom complet" required>
                         </div>
                         <div class="input-box">
                             <label for="phone" class="sr-only">Téléphone</label>
                             <i class="fa-solid fa-mobile-screen-button"></i>
-                            <input type="tel" id="phone" placeholder="Téléphone" required>
+                            <input type="tel" id="phone" name="phone" placeholder="Téléphone" required>
                         </div>
                     </form>
                 </div>
@@ -113,12 +113,12 @@
         <div>
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub"><i
                     class="fa-brands fa-github"></i></a>
-            <a href="" target="_blank" rel="noopener noreferrer"
+            <a href="#" target="_blank" rel="noopener noreferrer"
                 aria-label="Profil LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Profil Twitter"><i
                     class="fa-brands fa-x-twitter"></i></a>
         </div>
     </footer>
 <script src="script.js"></script> 
-
+</body>
 </html>
